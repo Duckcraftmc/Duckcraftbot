@@ -5,7 +5,7 @@ module.exports = {
     once: true,
     execute(client) {
         const activities = [{
-            name: `play.duckcraft.nl`, type: ActivityType.Custom, url: 'https://duckcraft.nl',
+            name: `play.duckcraft.nl`, type: ActivityType.Playing, url: 'https://duckcraft.nl',
         }];
 
         const status = ['dnd'];

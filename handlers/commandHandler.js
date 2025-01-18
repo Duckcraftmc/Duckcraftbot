@@ -2,7 +2,7 @@ const { REST, Routes } = require('discord.js');
 const config = require('../config.json');
 const fs = require('node:fs');
 
-async function loadCommands(client) {
+async function loadCommand(client) {
 
     const commands = [];
     const commandsFolder = fs.readdirSync("./commands");
@@ -34,5 +34,5 @@ async function loadCommands(client) {
 };
 
 module.exports = {
-    loadCommands
+    loadCommand
 };

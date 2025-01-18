@@ -1,7 +1,7 @@
 const fs = require('fs');
 const config = require('../config');
 
-function loadEvents(client) {
+function loadEvent(client) {
     const folders = fs.readdirSync('./events');
 
     for (const folder of folders) {
@@ -23,5 +23,5 @@ function loadEvents(client) {
 }
 
 module.exports = {
-    loadEvents
+    loadEvent
 }
